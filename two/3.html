@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>三种方式辨析</title>
+
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				text-align:center;
+				line-height: 200px;
+				background: red!important;
+				font-size: 30px;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/3.css">
+		<!-- 样式代码执行顺序 从上至下 -->
+		<!-- 三种样式共同作用于对应标签 -->
+		<!-- 相同属性安装执行顺序依次覆盖,不同属性取唯一设置值 -->
+	</head>
+	<body>
+		<!-- 重用:同项目中有良好的封装效果;不同项目中可以直接进行文件移植 -->
+		<div style="background: orange;">1</div>
+	</body>
+</html>

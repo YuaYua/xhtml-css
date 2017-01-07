@@ -1,0 +1,49 @@
+.num{
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	vertical-align: top;
+	background-color: white;
+	display: inline-block;
+}
+.pic{
+	width: 60px;
+	height: 60px;
+	background-color: pink;
+	display: inline-block;
+	margin-left:5px;
+	/*margin-top: 10px;*/
+}
+.intro{
+	width: 90px;
+	height: 40px;
+	background-color: #FEAAC6;
+	display: inline-block;
+	margin-left:5px;
+	padding: 10px
+}
+.i_top{
+	width: 90px;
+	height: 15px;
+	margin-bottom: 10px;
+	background-color: cyan;
+}
+.i_bottom{
+	width: 90px;
+	height: 15px;
+	background-color: cyan;
+}
+.c_first{
+	width: 220px;
+	background-color: cyan;
+	border:3px solid cyan;
+	margin: 5px auto;
+	padding: 5px 12px;
+}
+.content{
+	width: 268px;
+	height: 500px;
+	background-color: #FFCF8A;
+	padding-top: 1px;
+	margin: 0 auto;
+}

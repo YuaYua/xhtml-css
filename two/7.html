@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>边界</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: orange;
+		}
+		.div1{
+			/*默认3px*/
+			border-width: 10px;
+			/*默认black*/
+			border-color: red;
+			/*solid实线 dashed虚线 dotted点状线*/
+			border-style: solid;
+
+
+			border:50px solid tan;
+		}
+		.div2{
+			border-top: 10px solid green;
+			border-left: 3px dashed blue;
+			border-right: 3px dashed blue;
+			border-bottom: 10px dotted gold;
+		}
+		.div3{
+			/*border:5px solid red;*/
+			/*四个边角向两边延伸多少 n px 形成圆角,若超出一半按一半处理*/
+			border-radius: 100px;
+
+			border-radius: 10px 30px 50px 80px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+</body>
+</html>

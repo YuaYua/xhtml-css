@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气预报</title>
+	<style type="text/css">
+		table{
+			width: 700px;
+			height: 300px;
+			text-align: center;
+		}
+		#t1,#t2,#t3{
+			color: #ED471D
+		}
+		#t4,#t5{
+			color: #010062
+		}
+		th{
+			background-color: #DAE3F9
+		}
+
+		
+	</style>
+
+</head>
+<body>
+	<table border="1" rules="all">
+		<tbody>
+			<tr>
+				<th colspan="2">日期</th>
+				
+				<th colspan="2">天气现象</th>
+				
+				<th>气温</th>
+				<th>风向</th>
+				<th>风力</th>
+			</tr>
+			<tr>
+				<td rowspan="2">22日星期五</td>
+				<td>白天</td>
+				<td>🌞</td>
+				<td>晴间多云</td>
+				<td id="t2">高温 7℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+			<tr>
+				
+				<td>夜间</td>
+				<td>🌛</td>
+				<td>晴</td>
+				<td id="t5">低温 -4℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+			<!-- 留白 -->
+			<tr class="t1">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td rowspan="2" id="t1">23日星期六</td>
+				<td>白天</td>
+				<td>🌞</td>
+				<td>晴</td>
+				<td id="t3">高温 9℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+			<tr>
+				
+				<td>夜间</td>
+				<td>🌛</td>
+				<td>阴</td>
+				<td id="t4">低温 -2℃</td>
+				<td>无持续风向</td>
+				<td>微风</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

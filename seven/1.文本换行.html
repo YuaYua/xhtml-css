@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本换行</title>
+	<style type="text/css">
+		.div1{
+			width: 200px;
+			height: 200px;
+			border:1px solid blue;
+		}
+		.div1{
+			/*以单词为单位换行*/
+			word-wrap: break-word;
+			/*强制换行，不管是否是一个单词*/
+			word-break: break-all;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">one two one two one two one two one two one two one two one two one two one two one two one two one two one two one two one two one two three one two threeone two threeone two threeone two threeone two three</div>
+</body>
+</html>

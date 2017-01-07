@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Document</title>
+	<style type="text/css">
+		.div1{
+			width: 600px;
+			height: 600px;
+			background-color: yellow
+		}
+		.div1{
+			/*1,背景图片*/
+			background-image: url(img/001.png);
+
+			/*2,平铺*/
+			/*不平铺:no-repeat;仅x轴平铺:repeat-x;仅y轴平铺:repeat-y*/
+			/**/
+			background-repeat:no-repeat; 
+
+			/*3,定位*/
+			/*单独设置 background-position-x*/
+			/*单独设置 background-position-y*/
+			/*background-position-x:right;
+			background-position-y: center; */
+			/*水平:left/center/right;垂直:top/center/bottom*/
+			/*background-position: right center;*/
+			
+			/*长度单位:一个值时控制的时水平方向,垂直方向默认居中*/
+			/*两个值时,分别控制水平居中方向上的偏移量(相对于左上角原点而言)*/
+			/*background-position: 8px 8px;*/
+/*			background-position: center;
+*/
+
+
+			/*4.滑动属性*/
+			/*scroll:相对于自身原点以及自身尺寸而言;背景图片随所属标签滑动而滑动*/
+			/*fixed:相对于视图原点以及视图尺寸而言;背景图片不随所属标签滑动而滑动*/
+			background-attachment: fixed;
+
+			/*5,尺寸*/
+			/*一个参数设置的是宽,高会等比缩放*/
+			/*background-size: 400px;*/
+			/*两个参数分别设置宽,高,出现一个auto会根据另一个参数形参等比例缩放*/
+			/*background-size: 400px auto;*/
+
+			/*等比缩放到一边刚充满屏幕,另一边未充满或也刚充满屏幕*/
+			/*background-size: contain;*/
+
+			/*符合型属性设置*/
+			background: red url(img/001.png) no-repeat center 50px 50px;
+
+
+
+
+
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	
+</body>
+</html>

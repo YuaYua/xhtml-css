@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>三种CSS设置方式</title>
+
+		<!-- 2,内联式 -->
+		<!-- 内联式存在于head中,以style标签标识 -->
+		<!-- 格式:选择器{属性1: 属性值; ...; 属性n: 属性值} -->
+		<!-- 选择器:如div会检索到body标签中的所有div标签,导致检索到的标签都满足此套css样式 -->
+		<!-- {}:作用域 -->
+		<!-- css样式属性:规范书写为一个属性独占一行 -->
+		<style type="text/css">
+			div{
+				width: 200px; 
+				height: 200px; 
+				background: yellow;
+			}
+		</style>
+
+		<!-- 3,外联式 -->
+		<!-- ①新建外部.css文件 ②在head中用link链接.css文件 ③在.css文件中进行相关样式设置 -->
+		<link rel="stylesheet" type="text/css" href="css/2.css">
+
+
+	</head>
+	<body>
+		<!-- 1,行间式 -->
+		<!-- width设置标签的宽度 -->
+		<!-- height设置标签的高度 -->
+		<!-- background设置标签的背景颜色 -->
+		<!-- 行间式存在于标签的头部,样式设置在style全局属性中,各样式属性之间以分号隔开(最后的分号可以省略,且分号为英文符) -->
+		<!-- <div style="width: 200px; height: 200px; background:red;"></div> -->
+
+		<!-- 2,内联式 -->
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+
+		<!-- 3,外联式 -->
+		<p>001</p>
+		<p>002</p>
+		<p>003</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>页面隐藏</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border:1px solid black;
+		}
+		/*设置盒模型透明度*/
+		.div1{
+			/*0:透明；1：不透明； 0.5：半透明*/
+			opacity: 0;
+		}
+		/* 设置元素显示效果*/
+		.div2{
+			/*hidden:隐藏*/
+			/*visible:显示*/
+			visibility: hidden;
+			/*只是隐藏元素，该元素还在原有位置，且占空间*/
+		}
+		.div3{
+			/*display:隐藏*/
+			/*display:block*/
+			display: none;
+			/*该方式是彻底隐藏元素，也就是说将元素从文档层移除，不在占空间*/
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+</body>
+</html>

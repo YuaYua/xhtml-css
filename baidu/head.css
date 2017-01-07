@@ -1,0 +1,53 @@
+.head_box{
+	height: 36px;
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #dfdfdf;
+	position: relative;
+
+}
+.head_inf{
+	width: 1210px;
+	height: 36px;
+	background-color: #FAFAFA;
+	margin: 0 auto;
+	position: relative;
+}
+.city{
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	/*list-style: none;*/
+}
+.city>li, .user>li{
+	display: inline-block;
+	line-height: 36px;
+	position: relative;
+	font-size: 12px;
+	border-left: 1px solid #fafafa;
+	border-right: 1px solid #fafafa; 
+}
+.city_city{
+	padding-right: 10px;
+}
+.sep_lines{
+	position: absolute;
+	display: block;
+	border-left: 1px solid #dfdfdf;
+	top: 50%;
+	right: -1px;
+	height: 12px;
+	width: 1px;
+	margin-top: -6px;
+}
+.user{
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.city>li>a,.user>li>a{
+	line-height: 36px;
+	padding: 0 10px;
+	height: 36px;
+	display: block;
+}

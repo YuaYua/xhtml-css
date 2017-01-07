@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本</title>
+	<style type="text/css">
+		.div1{
+			width: 300px;
+			height: 300px;
+			background-color: grey;
+			margin: 0 auto;
+		}
+		.div1{
+			/*①字体颜色*/
+			color: orange;
+
+			/*水平居中*/
+			/*left center right*/
+			text-align: center;
+			/*（行高）垂直居中*/
+			line-height: 300px;
+			/*字体大小*/
+			font-size: 30px;
+			/*字重*/
+			/*bold==bolder==800*/
+			font-weight: bold;
+			/*字集*/
+			/*先查找abc,若未找到,再查找STSong*/
+			/*Arial保底字体*/
+			font-family: abc, STSong,Arial;
+
+			/*文格线*/
+			/*underline 下划线*/
+			/*overline 上划线*/
+			/*line-through 删除线*/
+			text-decoration: underline;
+		}
+		a{
+			text-decoration: none;
+		}
+		.div3{
+			width: 200px;
+			height: 200px;
+			/*color:red;*/
+			margin: 0 auto;
+			background-color: red;
+			/*30px/200px  字大小/行高*/
+			font:bold 30px/200px STSong;
+			/*文本缩进 em:字节*/
+			text-indent:2em;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1">哈哈哈</div>
+	<a href="#">哈哈哈哈哈哈哈哈</a>
+
+	<!-- 文本具有继承性 -->
+	<div class="div1">
+	<p>这是一个P</p>
+	<!-- 且可以对字体相关属性重新赋值 -->
+	<h1>这是一个H1</h1>
+	</div>
+
+	<div class="div3">文本综合</div>
+
+
+</body>
+</html>

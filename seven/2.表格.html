@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格</title>
+	<style type="text/css">
+		.table2{
+			width: 600px;
+			height: 300px;
+		}
+		/*.table3{
+			width: 600px;
+			height: 300px;
+		}*/
+	</style>
+</head>
+<body>
+<!-- table：表格 -->
+	<table class="table1">
+	<!-- tr:行 -->
+			<tr>
+			<!-- th:表头 -->
+				<th>000</th> <th>000</th> <th>000</th>
+			</tr>
+			<tr>
+			<!-- td:单元格 -->
+				<td>1</td> <td>2</td> <td>3</td>
+			</tr>
+			<tr>
+				<td>4</td> <td>5</td> <td>6</td>
+			</tr>
+			<tr>
+				<td>7</td> <td>8</td> <td>9</td>
+			</tr>	
+	</table>
+	<!-- border:全局属性，存在默认单位1px -->
+	<!-- cellspacing:单元格（cell）之间的距离，默认单位1px -->
+	<!-- cellpadding:文本距离单元格边界的距离（cell的内边距） -->
+	<table class="table2" border="1" cellspacing="0" cellpadding="30">
+	
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+
+
+	<table class="table3" border="1">
+	<!-- th:①加粗；②垂直居中；③水平居中 -->
+	<!-- td:①垂直居中 -->
+	<!-- display:table 特性  -->
+	<!-- ①每个table单起一行 -->
+	<!-- ②没有设置宽高时，元素宽高由内容撑开 -->
+	<!-- ③当设置宽高时，能容下所有内容，则元素宽高为设置宽高，当内容再次大于设置值时，又会重新撑大宽高 -->
+	<!-- 注：支持宽高，支持所有css样式 -->
+			<tr>
+				<th>表头</th>
+				<th>表头</th>
+				<th>表头</th>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+			<tr>
+				<td>单元格</td>
+				<td>单元格</td>
+				<td>单元格</td>
+			</tr>
+	</table>
+	<!-- 因为使用border，会造成所有边界线*2，这时使用rules -->
+	<!-- rules:rows cols groups all -->
+	<table border="1" cellspacing="0" rules="all">
+		<thead>
+			<tr>
+				<th>thead</th>
+				<th>thead</th>
+				<th>thead</th>
+			</tr>
+		</thead>
+		<tbody>	
+			<tr>
+				<td>body</td>
+				<td>body</td>
+				<td>body</td>
+			</tr>
+			<tr>
+				<td>body</td>
+				<td>body</td>
+				<td>body</td>
+			</tr>
+			<tr>
+				<td>body</td>
+				<td>body</td>
+				<td>body</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>tfoot</th>
+				<th>tfoot</th>
+				<th>tfoot</th>
+			</tr>
+		</tfoot>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

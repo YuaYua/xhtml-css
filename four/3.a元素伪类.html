@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a元素伪类</title>
+	<style type="text/css">
+		a{
+			display:block;
+			width: 200px;
+			height: 200px;
+			margin: 20px auto;
+			background-color: #E0E64B;
+		}
+		a{
+			/*文字水平.垂直居中,清除下划线*/
+			text-decoration: none;
+			text-align: center;
+			line-height: 200px;
+			/*color: black;*/
+			font-size: 30px;
+
+		}
+		/*未访问的链接的初始状态*/
+		a:link{
+			/*没去过的网站颜色*/
+			color: tan;
+		}
+		/*访问过的链接状态*/
+		a:visit{
+			/*去过的网站颜色*/
+			color:yellow;
+		}
+		/*鼠标覆盖的链接状态*/
+		a:hover{
+			/*color: pink;
+			width: 400px;
+			border-radius: 50%;*/
+			text-decoration: underline;
+		}
+		/*鼠标点击时的链接状态*/
+		a:active{
+			color: green;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			transition: 3s;
+		}
+		/*div:hover{
+			background-color: red;
+		}*/
+		a:hover div{
+			background-color: red;
+		}
+		a:after{
+			content: "哈";
+		}
+	
+	</style>
+</head>
+<body>
+	<a href="http://www.hao123.com">我是a标签</a>
+	<div></div>
+	<a href=""><div></div></a>
+</body>
+</html>

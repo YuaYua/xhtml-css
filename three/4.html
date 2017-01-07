@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellow
+		}
+		.div2{
+			/*border:1px solid red;*/
+		}
+		p{
+			/*margin: 0px;*/
+			background-color: green;
+		}
+		.div1{
+			/*上 右 下 左*/
+			padding: 10px 20px 30px 40px;
+			float:left;
+		}
+
+		.div2{
+			margin-left: 50px;
+			padding-top: 10px;
+			float:left;
+		}
+		/*盒模型宽：margin-left + border-left + padding-left + width + padding-right + border-right + margin-right*/
+		/*盒模型高*/
+	</style>
+</head>
+<body>
+	<div class="div1">12345</div>
+	<div class="div2">
+		<p>12345</p>
+	</div>
+</body>
+</html>

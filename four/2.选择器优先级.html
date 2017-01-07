@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器优先级</title>
+	<style type="text/css">
+		body{
+			font-size: 100px
+		}
+		/*1.权值：权值越高优先级越高*/
+		/*
+			通配： 1
+			标签： 10
+			类：   100
+			id：   1000
+			行间式：10000
+			关键字：100000
+		*/
+		/*2权值计算只涉及同等选择同等选择器*/
+		/*3.行间式比所有的选择器优先级都高*/
+		/*4若布局迷糊了，可以添加!important（优先级高于行间式）*/
+		div div div{
+			color :red;
+		}
+		div div div div div div div div div div div div{
+			color: orange;
+		}
+		.div7{
+			color: tan;
+		}
+		div .div7{
+			color: yellow;
+		}
+		.div2 div div{
+			color: black;
+		}
+		#ID1 div{
+			color: pink;
+		}
+		#ID1 .div2 div .div4 div{
+			color:yellowgreen;
+		}
+		#ID1 #ID6 div{
+			color:gray;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div id="ID1">
+							<div class="div2">
+								<div>
+									<div class="div4">
+										<div>
+											<div id="ID6">1
+												<div class="div7">
+													12345
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

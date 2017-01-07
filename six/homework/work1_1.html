@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作业一重叠图片</title>
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: #00CBFC;
+			border:1px solid red;
+			position: absolute;
+		}
+		.div2{
+			left: 50px;
+			top: 50px;
+			z-index: 1
+		}
+		.div3{
+			left: 100px;
+			top: 100px;
+			z-index: 2;
+			background-color: #FFFF76
+		}
+		.div4{
+			left: 150px;
+			top: 150px;
+			z-index: 3
+		}
+		.div5{
+			left: 200px;
+			top: 200px;
+			z-index: 4
+		}
+	</style>
+</head>
+<body>
+
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+	<div class="div5"></div>
+</body>
+</html>

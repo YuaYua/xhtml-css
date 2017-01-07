@@ -1,0 +1,7 @@
+/* 3,外联式 */
+/* .css文件就相当于内联式style标签 */
+p{
+	width: 400px;
+	height: 200px;
+	background: tan;
+}

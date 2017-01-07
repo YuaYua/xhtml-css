@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+		}
+		.div1{
+			/*顺时针分别代表上下右左*/
+			margin:10px 20px 30px 40px;
+			/*左右自适应（水平居中）上下各距10px，左右居中*/
+			margin: 10px auto;
+			/*margin: auto 0; 不存在这种写法*/
+			/*margin: auto;不能实现居于屏幕中央*/
+			/*margin:auto;*/
+		}
+
+		/*①body自带margin*/
+		body{
+			width: 100%;
+			/*初始化body标签*/
+			margin: 0;
+		}
+
+		.div1{
+			margin-left:20px;
+			margin-top:10px;
+			border:1px solid black;
+		}
+		/*②top*/
+		/*margin-top是相对于最近的父级标签而言*/
+		/*若父级标签没有边界border，margin-top属性移植成父级属性，且再次向上查找父级标签*/
+		/*若父级一直没有边界，最终查找到文档层（html）*/
+		.sub{
+			width:50px;
+			height:50px;
+			background-color: red;
+			/*若父级标签没有边界，子标签设置margin-top会将父级下拉（可理解为将margin-top的值给父级使用）*/
+			margin-top: 100px;
+		}
+		/*③top重叠*/
+		/*若父子标签在第②中情况下，margin-top存在多个值，取较大值*/
+
+		/*④top left 影响自身布局  right bottom 影响兄弟布局*/
+		.div1{
+			margin-bottom:30px;
+		}
+		.div2{
+			margin-top:30px;
+		}
+
+		span{
+			margin-right:100px;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="sub"></div>
+	</div>
+	<div class="div2"></div>
+
+	<span>12345</span>
+	<span>12345</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

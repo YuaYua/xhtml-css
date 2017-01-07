@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位</title>
+	<style type="text/css">
+		.sup{
+			width: 400px;
+			height: 400px;
+			border:1px solid red;
+			margin:0 auto;
+		}
+		.sub{
+			width: 50px;
+			height: 50px;
+			background-color: orange;
+		}
+		.sup{
+			/*父级元素相对定位*/
+			/*①具有了定位属性，可以成为绝对定位子元素的参考坐标系*/
+			/*②由于父级元素不需要通过定位实现布局，或是该元素布局不应该受到定位影响，relative可满足这一点*/
+			position: relative;
+		}
+		.sub{
+			/*absolute:绝对定位*/
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			/*①参考系为最近的具有定位的父级标签*/
+			/*②入过所有的父级标签都未定位，会以文档所在坐标为参考坐标系*/
+			/*③绝对定位完全脱离文档流，原因空间位置不存在（也就不会影响兄弟标签布局）*/
+			left: 50%;
+			top: 50%;
+			margin: -25px;
+			
+			/*z-index；可看做z轴坐标*/
+			/*整数n:-n~+n*/
+			z-index: 1;
+		}
+		.next{
+			width: 50px;
+			height: 50px;
+			background-color: tan;
+			position: absolute;
+
+			left: 50%;
+			top: 50%;
+			margin: -25px;
+			z-index: 2;
+		}
+	</style>
+</head>
+<body>
+	<div class="sup">
+		<div class="sub"></div>
+		<div class="next"></div>
+	</div>
+</body>
+</html>

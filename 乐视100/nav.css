@@ -1,0 +1,26 @@
+.nav{
+	width: 960px;
+	height: 68px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 12px;
+	margin: 15px auto;
+}
+.nav>a{
+	text-align: center;
+	display: block;
+	width: 68px;
+	height: 68px
+}
+.n_a1, .n_a2, .n_a3, .n_a4, .n_a5{
+	float: left;
+}
+.n_a6{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -111px;
+}
+.n_a7, .n_a8, .n_a9, .n_a10, .n_a11{
+	float: right;
+}

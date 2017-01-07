@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒模型</title>
+	<style type="text/css">
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: red
+		}
+		.div2{
+			width: 200px;
+			height: 200px;
+			background-color: red
+		}
+		/*② 边界border*/
+		.div2{
+			border: 5px solid black; 
+		}
+
+		/*③ 内边距padding*/
+		.div2{
+			padding: 10px
+		}
+
+		/*④ 外边距margin*/
+		.div2{
+			margin-left: 200px;
+			margin-top: -216px;
+		}
+		.div3{
+			width: 200px;
+			height: 200px;
+			background-color: orange
+		}
+
+		.div4{
+			width: 90%;
+			height: 200px;
+			background-color: tan
+		}
+		.div4{
+			/*最大是800px*/
+			max-width: 800px;
+			min-width: 500px
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<br>
+	<div class="div2">123</div>
+	<div class="div3"></div>
+	<div class="div4"></div>
+</body>
+</html>

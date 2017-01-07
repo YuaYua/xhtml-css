@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>标签汇总</title>
+</head>
+<body>
+	<!-- 1.之前标签 -->
+	<!-- ①行块 -->
+	<p>段落标签，块标签</p>
+	<h1>标题，是块元素</h1>
+	<div>无意义标签，块元素</div>
+	<span>无意义标签，是内联元素</span>
+	
+	<!-- ②单双标签都应该闭合 -->
+	<br>
+
+	<!-- ③复合标签 -->
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<!-- 2.文本标签 -->
+	<b>加粗</b>&nbsp;<strong>强调加粗</strong>
+	<i>斜体</i>&nbsp;<em>强调斜体</em>
+
+
+	<span>上角标<sup>上面</sup></span>
+	<span>下角标<sub>下面</sub></span>
+
+	<!-- (默认：ltr)ltr:left to right ,rtl:right to left-->
+	<bdo dir="rtl">这是一段话，没有什么特别的</bdo>
+
+	<!-- 缩写 -->
+	<abbr title="application">APP</abbr>
+
+	<!-- 3.语义标签 -->
+	<blockquote>这里做长文使用</blockquote>
+	<q>这里做短文引用</q>
+	<del>这些文本是被删除了的</del>
+	<span>原有的一段<ins>插入</ins>文字</span>
+
+	<big>大号字体，h5已删除该标签</big>
+	<small>小号字体，h5依旧保留</small>
+
+	<!-- 代码标签 -->
+	<!-- int a = 10;
+	a=20;
+	printf("a的值是%d\n",a); -->
+	<code>
+		int a = 10;
+		a = 20;
+		printf("a的值是%d\n",a);
+	</code>
+
+	<!-- 格式化标签，保留一切标点符号（空格已经换行） -->
+	<pre>
+		int a = 10;
+		a = 20;
+		printf("a的值是%d\n",a);
+	</pre>
+	
+	<!-- 4.锚点 -->
+	<a href="#">空链接</a>
+	<a href="" name="aaaaa"></a>
+
+	<a href="#aaaaa">前往锚点</a>
+	<a href="1.测试锚点.html#test" target="_blank">test锚点</a>
+
+	<ol type="I" start="5" reversed="reversed">
+		<li>列表项</li>
+		<li>列表项</li>
+		<li>列表项</li>
+	</ol>
+	<!-- 5.图像map -->
+	<!-- 无内容 不占空间 -->
+	<img src="" alt="">
+
+	<!-- 图片多大，所占空间多大 -->
+	<img src="../../001.jpg" alt="">
+
+	<!-- 不管图片大小，强行规定宽高 -->
+	<img src="../../001.jpg" alt="" style="width: 50px;height: 50px;">
+
+	<!-- 只规定宽高，此时会出现区域框 -->
+	<img src="" alt="" style="width: 50px;height: 50px;">
+
+	<img src="big.png" usemap="#apMap">
+	<map name="apMap" id="apMap">
+		<!-- <area shape="circle" coords="0,100,90,100,90,100,0,100" href="small.png" alt="" target="_self"> -->
+		<area shape="poly" coords="0,100,90,100,90,100,0,100" href="small.png" alt="" target="_self">
+	</map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动</title>
+	<style type="text/css">
+		.sup{
+			width: 800px;
+			/*height: 500px;*/
+			background-color: cyan;
+			margin:0 auto;
+		}
+		.sup div{
+			width: 200px;
+			height: 200px;
+		}
+
+		/*浮动*/
+		/*子元素浮动，会（不完全）脱离文档流*/
+		/*特性：不在撑开父级元素高度，会影响父级元素的兄弟元素布局*/
+		/*如果父级元素有兄弟元素，为了布局不出问题，需要父级元素拥有合适的高度（正好包裹所有子元素）*/
+		.sub1{
+			background-color: tan;
+			float: left;
+		}
+		.sub2{
+			background-color: black;
+			float: left;
+		}
+		.sub3{
+			background-color: pink;
+			float: left;
+		}
+
+
+		/*2 清浮动*/
+		/*①手动给父级标签一个高度*/
+		/*②父级标签自身浮动*/
+		/*③父级使用overflow*/
+		/*④父级inline-block*/
+		/*⑤兄弟元素clear*/
+		/*⑥父级元素伪类清浮动*/
+		.sup:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		/*.sup {
+			zoom:1;
+		}*/
+
+	</style>
+</head>
+<body>
+	<div class="sup">
+		<div class="sub1"></div>
+		<div class="sub2"></div>
+		<div class="sub3"></div>
+	</div>
+</body>
+</html>

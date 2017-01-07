@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单元素</title>
+</head>
+<body>
+	<form action="">
+		<!-- 单选框 -->
+		<label>你是男的女的？</label>
+		<input type="radio" name="gender" value="male">男
+		<input type="radio" name="gender" value="female">女
+
+		<br>
+		
+
+		<!-- 多选框 -->
+		<label>你喜欢？</label>
+		<input type="checkbox" name="sex" value="m">男
+		<input type="checkbox" name="sex" value="f">女
+		<input type="checkbox" name="sex" value="mf">男女
+		<input type="checkbox" name="sex" value="fm">女男
+		<input type="checkbox" name="sex" value="xx">外星人
+
+		<br>
+
+		<!-- 提交文件：文件路径 -->
+		<input type="file" name="file">
+		<br>
+		<!-- 链接：会做内容判断 -->
+		请输入网址：<input type="url" name="url">
+		<br>
+
+		<!-- 其他：数字 -->
+		<input type="number" name="" step="2" max="10" min="-5">
+		<input type="color" name="">
+		<input type="range" name="">
+		<input type="search" name="">
+
+		<br>
+		<input type="submit" value="提交">
+		<input type="reset" name="" value="重置">
+	</form>
+</body>
+</html>
